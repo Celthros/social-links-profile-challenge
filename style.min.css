@@ -1,3 +1,26 @@
+:root {
+  --default-font: 0.875rem;
+  --font-24: 1.5rem;
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+  --spacing-500: 2.5rem;
+  --spacing-300: 1.5rem;
+  --spacing-200: 1rem;
+  --spacing-150: 0.75rem;
+  --spacing-100: 0.5rem;
+  --spacing-50: 0.25rem;
+  --border-round-m: 0.75rem;
+  --border-round-s: 0.5rem;
+  --border-round-half: 50%;
+  --line-height: 1.5;
+  --clamp-padding-1: clamp(var(--spacing-300), 2vw, var(--spacing-500));
+  --gap-1: 1rem;
+  --gap-2: 1.5rem;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -156,29 +179,6 @@ template {
 
 [hidden] {
   display: none;
-}
-
-:root {
-  --default-font: 0.875rem;
-  --font-24: 1.5rem;
-  --color-green: hsl(75, 94%, 57%);
-  --color-white: hsl(0, 0%, 100%);
-  --color-grey-700: hsl(0, 0%, 20%);
-  --color-grey-800: hsl(0, 0%, 12%);
-  --color-grey-900: hsl(0, 0%, 8%);
-  --spacing-500: 2.5rem;
-  --spacing-300: 1.5rem;
-  --spacing-200: 1rem;
-  --spacing-150: 0.75rem;
-  --spacing-100: 0.5rem;
-  --spacing-50: 0.25rem;
-  --border-round-m: 0.75rem;
-  --border-round-s: 0.5rem;
-  --border-round-half: 50%;
-  --line-height: 1.5;
-  --clamp-padding-1: clamp(var(--spacing-300), 2vw, var(--spacing-500));
-  --gap-1: 1rem;
-  --gap-2: 1.5rem;
 }
 
 body {
