@@ -1,10 +1,14 @@
-@use "../abstract/mixins" as mixs;
+@use "../abstract/mixins";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  }
 
 body {
   font-size        : var(--default-font);
   background-color : var(--color-grey-900);
   color            : var(--color-white);
-  @include mixs.Inter-font();
+  @include mixins.Inter-font();
   display          : flex;
   justify-content  : center;
   align-items      : center;
