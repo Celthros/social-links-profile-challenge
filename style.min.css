@@ -176,7 +176,7 @@ template {
   --border-round-s: 0.5rem;
   --border-round-half: 50%;
   --line-height: 1.5;
-  --clamp-padding-1: clamp(var(--spacing-500), 2vw, var(--spacing-300));
+  --clamp-padding-1: clamp(var(--spacing-300), 2vw, var(--spacing-500));
   --gap-1: 1rem;
   --gap-2: 1.5rem;
 }
@@ -230,6 +230,8 @@ a:link, a:visited, a:active {
   justify-content: center;
   border-radius: var(--border-round-m);
   gap: var(--gap-2);
+  width: 100%;
+  max-width: 24em;
 }
 .social__profile__figure {
   margin: 0;

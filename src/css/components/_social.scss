@@ -7,6 +7,8 @@
   justify-content  : center;
   border-radius    : var(--border-round-m);
   gap              : var(--gap-2);
+  width: 100%;
+  max-width: 24em;
   
   &__figure {
 	margin : 0;
