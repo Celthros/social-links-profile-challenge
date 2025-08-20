@@ -1,28 +1,4 @@
-@use "../abstract/variables" as var;
 @use "../abstract/mixins" as mixs;
-
-:root {
-  --default-font      : #{var.$default-font};
-  --font-24           : #{var.$font-24};
-  --color-green       : #{var.$Green};
-  --color-white       : #{var.$White};
-  --color-grey-700    : #{var.$Grey-700};
-  --color-grey-800    : #{var.$Grey-800};
-  --color-grey-900    : #{var.$Grey-900};
-  --spacing-500       : #{var.$spacing-500};
-  --spacing-300       : #{var.$spacing-300};
-  --spacing-200       : #{var.$spacing-200};
-  --spacing-150       : #{var.$spacing-150};
-  --spacing-100       : #{var.$spacing-100};
-  --spacing-50        : #{var.$spacing-50};
-  --border-round-m    : #{var.$border-round-m};
-  --border-round-s    : #{var.$border-round-s};
-  --border-round-half : 50%;
-  --line-height       : 1.5;
-  --clamp-padding-1   : clamp(var(--spacing-300), 2vw, var(--spacing-500));
-  --gap-1             : 1rem; //16px
-  --gap-2             : 1.5rem; //24px
-  }
 
 body {
   font-size        : var(--default-font);
