@@ -2,22 +2,26 @@
 @use "../abstract/mixins" as mixs;
 
 :root {
-  --default-font   : #{var.$default-font};
-  --font-24        : #{var.$font-24};
-  --color-green    : #{var.$Green};
-  --color-white    : #{var.$White};
-  --color-grey-700 : #{var.$Grey-700};
-  --color-grey-800 : #{var.$Grey-800};
-  --color-grey-900 : #{var.$Grey-900};
-  --spacing-500    : #{var.$spacing-500};
-  --spacing-300    : #{var.$spacing-300};
-  --spacing-200    : #{var.$spacing-200};
-  --spacing-150    : #{var.$spacing-150};
-  --spacing-100    : #{var.$spacing-100};
-  --spacing-50     : #{var.$spacing-50};
-  --border-round-m : #{var.$border-round-m};
-  --border-round-s : #{var.$border-round-s};
-  --line-height    : 1.5;
+  --default-font      : #{var.$default-font};
+  --font-24           : #{var.$font-24};
+  --color-green       : #{var.$Green};
+  --color-white       : #{var.$White};
+  --color-grey-700    : #{var.$Grey-700};
+  --color-grey-800    : #{var.$Grey-800};
+  --color-grey-900    : #{var.$Grey-900};
+  --spacing-500       : #{var.$spacing-500};
+  --spacing-300       : #{var.$spacing-300};
+  --spacing-200       : #{var.$spacing-200};
+  --spacing-150       : #{var.$spacing-150};
+  --spacing-100       : #{var.$spacing-100};
+  --spacing-50        : #{var.$spacing-50};
+  --border-round-m    : #{var.$border-round-m};
+  --border-round-s    : #{var.$border-round-s};
+  --border-round-half : 50%;
+  --line-height       : 1.5;
+  --clamp-padding-1   : clamp(var(--spacing-500), 2vw, var(--spacing-300));
+  --gap-1             : 1rem; //16px
+  --gap-2             : 1.5rem; //24px
   }
 
 body {
@@ -25,4 +29,34 @@ body {
   background-color : var(--color-grey-900);
   color            : var(--color-white);
   @include mixs.Inter-font();
+  display          : flex;
+  justify-content  : center;
+  align-items      : center;
+  height           : 100vh;
+  flex-direction   : column;
+  padding          : var(--spacing-50);
+  }
+
+main {
+  margin-top    : var(--spacing-150);
+  padding-left  : var(--spacing-150);
+  padding-right : 1rem;
+  }
+
+h1 {
+  font-size   : var(--font-24);
+  margin      : 0.313em 0;
+  font-weight : 600;
+  }
+
+p {
+  font-weight: 300;
+  margin : 0.313em 0;
+  }
+
+a:link, a:visited, a:active {
+  color            : var(--color-white);
+  background-color : var(--color-grey-700);
+  text-decoration  : none;
+  transition       : all 0.1s ease-in-out;
   }
