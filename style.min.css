@@ -176,7 +176,7 @@ template {
   --border-round-s: 0.5rem;
   --border-round-half: 50%;
   --line-height: 1.5;
-  --clamp-padding-1: clamp(var(--spacing-500), 2vw, var(--spacing-300));
+  --clamp-padding-1: clamp(var(--spacing-300), 2vw, var(--spacing-500));
   --gap-1: 1rem;
   --gap-2: 1.5rem;
 }
@@ -195,12 +195,10 @@ body {
   height: 100vh;
   flex-direction: column;
   padding: var(--spacing-50);
-}
-
-main {
-  margin-top: var(--spacing-150);
+  margin: var(--spacing-150) auto 0;
+  flex-wrap: nowrap;
   padding-left: var(--spacing-150);
-  padding-right: 1rem;
+  padding-right: var(--spacing-150);
 }
 
 h1 {
@@ -230,6 +228,10 @@ a:link, a:visited, a:active {
   justify-content: center;
   border-radius: var(--border-round-m);
   gap: var(--gap-2);
+  width: 100%;
+  max-width: 384px;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
 }
 .social__profile__figure {
   margin: 0;
@@ -245,6 +247,9 @@ a:link, a:visited, a:active {
   color: var(--color-green);
   font-weight: bold;
 }
+.social__profile__description {
+  text-align: center;
+}
 .social__profile__buttons {
   display: flex;
   flex-direction: column;
@@ -254,6 +259,7 @@ a:link, a:visited, a:active {
   width: 100%;
 }
 .social__profile__button {
+  box-sizing: border-box;
   width: 100%;
   padding: var(--spacing-150);
   text-align: center;
