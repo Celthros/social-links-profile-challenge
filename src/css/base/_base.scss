@@ -35,12 +35,10 @@ body {
   height           : 100vh;
   flex-direction   : column;
   padding          : var(--spacing-50);
-  }
-
-main {
-  margin-top    : var(--spacing-150);
-  padding-left  : var(--spacing-150);
-  padding-right : 1rem;
+  margin           : var(--spacing-150) auto 0;
+  flex-wrap        : nowrap;
+  padding-left     : var(--spacing-150);
+  padding-right    : var(--spacing-150);
   }
 
 h1 {
@@ -50,8 +48,8 @@ h1 {
   }
 
 p {
-  font-weight: 300;
-  margin : 0.313em 0;
+  font-weight : 300;
+  margin      : 0.313em 0;
   }
 
 a:link, a:visited, a:active {

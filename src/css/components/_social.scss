@@ -7,8 +7,10 @@
   justify-content  : center;
   border-radius    : var(--border-round-m);
   gap              : var(--gap-2);
-  width: 100%;
-  max-width: 24em;
+  width            : 100%;
+  max-width        : 384px;
+  box-sizing       : border-box;
+  flex-wrap        : nowrap;
   
   &__figure {
 	margin : 0;
@@ -28,6 +30,10 @@
 	  }
 	}
   
+  &__description {
+	text-align : center;
+	}
+  
   &__buttons {
 	display         : flex;
 	flex-direction  : column;
@@ -38,6 +44,7 @@
 	}
   
   &__button {
+	box-sizing    : border-box;
 	width         : 100%;
 	padding       : var(--spacing-150);
 	text-align    : center;
