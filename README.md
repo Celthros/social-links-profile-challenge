@@ -14,7 +14,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot solution](/assets/images/screenshot.png)
+![Social links profile card showing user avatar and social media button](/assets/images/screenshot.png)
 
 
 ### Links
@@ -33,7 +33,7 @@ Users should be able to:
 
 ### What I learned
 
-Overall I learned more about SASS and how some of the functionality works with clamp a bit more and where I might want to separate root css variables in its own file.
+Overall, I learned more about SASS functionality, particularly how clamp() works, and where I might want to separate root CSS variables into their own file.
 
 
 
