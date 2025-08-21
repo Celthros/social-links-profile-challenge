@@ -198,7 +198,6 @@ body {
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  padding: var(--spacing-50);
   margin: var(--spacing-150) auto 0;
   padding-left: var(--spacing-150);
   padding-right: var(--spacing-150);
@@ -263,7 +262,7 @@ a:link, a:visited, a:active {
 .social__profile__button {
   box-sizing: border-box;
   width: 100%;
-  padding: var(--spacing-150);
+  padding: var(--spacing-200);
   text-align: center;
   border-radius: var(--border-round-s);
   font-weight: bold;
